@@ -10,10 +10,10 @@ import { InfoPaginaService } from 'src/app/servicios/info-pagina.service';
 export class CabeceraComponent implements OnInit {
   
   imports: [  
-    RouterModule 
+    RouterModule
     ]
 
-  constructor( public _servicio: InfoPaginaService ) { }
+  constructor( public _servicio: InfoPaginaService) { }
 
   ngOnInit(): void {
   }

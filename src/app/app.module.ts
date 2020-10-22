@@ -5,6 +5,8 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 
+import { CommonModule } from "@angular/common";
+
 import { AppComponent } from './app.component';
 import { CabeceraComponent } from './compartido/cabecera/cabecera.component';
 import { PieDePaginaComponent } from './compartido/pie-de-pagina/pie-de-pagina.component';
@@ -26,7 +28,8 @@ import { Err404Component } from './paginas/err404/err404.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    CommonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
