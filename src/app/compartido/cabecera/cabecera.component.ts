@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { InfoPaginaService } from 'src/app/servicios/info-pagina.service';
 
 @Component({
   selector: 'app-cabecera',
@@ -12,7 +13,7 @@ export class CabeceraComponent implements OnInit {
     RouterModule 
     ]
 
-  constructor() { }
+  constructor( public _servicio: InfoPaginaService ) { }
 
   ngOnInit(): void {
   }
