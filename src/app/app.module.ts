@@ -14,6 +14,7 @@ import { PortafolioComponent } from './paginas/portafolio/portafolio.component';
 import { AboutComponent } from './paginas/about/about.component';
 import { ItemComponent } from './paginas/item/item.component';
 import { Err404Component } from './paginas/err404/err404.component';
+import { LoaderComponent } from './plugins/loader/loader.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { Err404Component } from './paginas/err404/err404.component';
     PortafolioComponent,
     AboutComponent,
     ItemComponent,
-    Err404Component
+    Err404Component,
+    LoaderComponent
   ],
   imports: [
     BrowserModule,

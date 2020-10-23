@@ -1,12 +1,15 @@
 
     <section class="ae-container-fluid ae-container-fluid--inner rk-portfolio">
-      
+
+    <div *ngIf="_infoProductos.cargando">
+      <app-loader ></app-loader>
+    </div>
       <div  *ngFor="let producto of _infoProductos.productos" class="ae-masonry ae-masonry-md-2 ae-masonry-xl-4">
-        <a routerLink="/item" class="rk-item ae-masonry__item">
-          <img src="../../../assets/img/{{ producto.url }}.jpg" alt="">
+        <a routerLink="/../../assets/img/productos/{{ producto.url }}.jpg" class="rk-item ae-masonry__item">
+          <img src="../../../assets/img/productos/{{ producto.url }}.jpg" alt="">
           <div class="item-meta">
-            <h2>Essential Stationery</h2>
-            <p>Branding</p>            
+            <h2>{{ producto.titulo }}</h2>
+            <p>{{ producto.categoria }}</p>            
           </div>
         </a>
 
