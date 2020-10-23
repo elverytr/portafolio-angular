@@ -11,6 +11,7 @@ import { DescripProducto } from 'src/app/interfaces/producto-descripcion.interfa
 export class ItemComponent implements OnInit {
 
 producto: DescripProducto;
+id: string;
 
   constructor( private route: ActivatedRoute,
                public _servicioProducto: ProductosService) { }
@@ -23,10 +24,8 @@ producto: DescripProducto;
       this._servicioProducto.getProducto(parametros['id'])
       
       .subscribe( (producto: DescripProducto) => {
-
+        this.id = parametros['id'];
         this.producto = producto;
-        console.log(producto);
-
       });
     });
 
