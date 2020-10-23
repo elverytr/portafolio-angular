@@ -9,7 +9,7 @@ const rutas: Routes = [
   { path: '', component: PortafolioComponent },
   { path: 'inicio', component: PortafolioComponent },
   { path: 'about', component: AboutComponent },
-  { path: 'item', component: ItemComponent },
+  { path: 'item/:id', component: ItemComponent },
   { path: '**', component: Err404Component}
 ];
 

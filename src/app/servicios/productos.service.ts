@@ -18,7 +18,9 @@ export class ProductosService {
     this.http.get("https://angular-html-917fb.firebaseio.com/productos_idx.json").subscribe( (resp: Producto[] )=> {
       this.productos = resp;
       this.cargando = false;
-      console.log(resp);
     });
+  }
+  getProducto( id: string){
+    return this.http.get(`https://angular-html-917fb.firebaseio.com/productos/${ id }.json`);
   }
 }
