@@ -4,12 +4,14 @@ import { PortafolioComponent } from './paginas/portafolio/portafolio.component';
 import { AboutComponent } from './paginas/about/about.component';
 import { ItemComponent } from './paginas/item/item.component';
 import {Err404Component } from './paginas/err404/err404.component';
+import { BusquedaComponent } from './paginas/busqueda/busqueda.component';
 
 const rutas: Routes = [
   { path: '', component: PortafolioComponent },
   { path: 'inicio', component: PortafolioComponent },
   { path: 'about', component: AboutComponent },
   { path: 'item/:id', component: ItemComponent },
+  { path: 'buscar/:termino', component: BusquedaComponent },
   { path: '**', component: Err404Component}
 ];
 
